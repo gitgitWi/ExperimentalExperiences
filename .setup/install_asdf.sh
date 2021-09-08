@@ -1,6 +1,6 @@
 # Install Deno with asdf (see {https://asdf-vm.com})
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-. $HOME/.asdf/asdf.sh
+# sh -c ". $HOME/.asdf/asdf.sh"
 
 # Install Deno
 asdf plugin add deno

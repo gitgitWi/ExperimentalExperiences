@@ -19,7 +19,7 @@ RUN chsh -s /usr/bin/zsh
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-COPY ./setup/.zshrc /root/.zshrc
+COPY ./.setup/.zshrc /root/.zshrc
 SHELL [ "/bin/zsh", "source", "~/.zshrc" ]
 
 CMD ["zsh"]
