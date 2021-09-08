@@ -406,17 +406,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@example/starter@workspace:astro/WithDocs":
-  version: 0.0.0-use.local
-  resolution: "@example/starter@workspace:astro/WithDocs"
-  dependencies:
-    "@astrojs/renderer-react": ^0.2.0
-    "@astrojs/renderer-svelte": ^0.1.1
-    "@astrojs/renderer-vue": ^0.1.7
-    astro: ^0.20.4
-  languageName: unknown
-  linkType: soft
-
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -1479,6 +1468,17 @@ __metadata:
   checksum: b432c3f35473ccb7ae715c9e7f5f2ea3eb6864809396d5a0cd4a00959bced3d8aaddf3d87a86e5c0f2f00a210fe789c2835e9dc48ac7c6dfe8be483f655a9490
   languageName: node
   linkType: hard
+
+"astro-with-docs@workspace:astro/WithDocs":
+  version: 0.0.0-use.local
+  resolution: "astro-with-docs@workspace:astro/WithDocs"
+  dependencies:
+    "@astrojs/renderer-react": ^0.2.0
+    "@astrojs/renderer-svelte": ^0.1.1
+    "@astrojs/renderer-vue": ^0.1.7
+    astro: ^0.20.4
+  languageName: unknown
+  linkType: soft
 
 "astro@npm:^0.20.4":
   version: 0.20.4
