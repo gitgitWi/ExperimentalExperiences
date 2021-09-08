@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.base",
+  "moduleResolution": "node",
+  "exclude": ["dist/"]
+}
