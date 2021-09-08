@@ -38,17 +38,17 @@ let title = 'My Astro Site';
 
         <Tour />
 
-        <!--
-           - You can also use imported framework components directly in your markup!
-           -
-           - Note: by default, these components are NOT interactive on the client.
-           - The `:visible` directive tells Astro to make it interactive.
-           -
-           - See https://docs.astro.build/core-concepts/component-hydration/ 
-           -->
+        <h2>React Counter</h2>
         <ReactCounter client:visible />
+        <br />
+
+        <h2>Svelte Counter</h2>
         <SvelteCounter client:visible />
+        <br />
+
+        <h2>Vue Counter</h2>
         <VueCounter client:visible />
+        <br />
     </main>
 </body>
 </html>
