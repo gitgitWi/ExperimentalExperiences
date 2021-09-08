@@ -35,7 +35,8 @@
 		"gencer.html-slim-scss-css-class-completion",
 		"mrmlnc.vscode-scss",
 		"rangav.vscode-thunder-client",
-		"visualstudioexptteam.vscodeintellicode"
+		"visualstudioexptteam.vscodeintellicode",
+		"ldez.ignore-files"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
