@@ -1,40 +1,38 @@
-# Welcome to [Astro](https://astro.build)
+# `Astro` with Document
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[`Astro` 공식문서](https://docs.astro.build/getting-started) 보면서 따라하기
 
-## 🚀 Project Structure
+- 한국어 페이지도 있긴하나, 랜딩 페이지만 번역된 수준..ㅠ
+- `.astro` 파일은 아직 Prettier가 지원되지 않는다.. 💢
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+## Getting Started
+
+[👉&nbsp; Installation Docs](https://docs.astro.build/installation)
+
+```bash
+yarn create astro
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- template 선택
+- 필요한 UI 라이브러리/프레임워크 선택 등
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+yarn workspace astro-with-docs install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+- 현재 프로젝트는 Monorepo 방식
+- 프로젝트 생성 이후 `yarn install`로 필요한 패키지 설치
 
-## 🧞 Commands
+### astro scripts
 
-All commands are run from the root of the project, from a terminal:
+[👉&nbsp; CLI References Docs](https://docs.astro.build/reference/cli-reference#astro-dev)
 
-| Command         | Action                                      |
-| :-------------- | :------------------------------------------ |
-| `npm install`   | Installs dependencies                       |
-| `npm run dev`   | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
+```bash
+yarn workspace astro-with-docs run (dev|build|preview)
+```
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
+- `dev`: 일반적인 개발 모드, 최초실행시 npm cache 파일 생성 (`snowpack`)
+- `build`: 배포 파일로 빌드
+- `preview`: 배포 파일을 미리 실행, 일반적으로 사용하는 `start`와 유사
