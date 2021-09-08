@@ -18,4 +18,6 @@ node -v
 
 npm i -g npm yarn
 npm -v
+# yarn v1.x -> v3.x
+yarn set version latest
 yarn -v
