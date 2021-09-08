@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "deploy": "yarn workspace astro-with-docs build && firebase deploy"
   },
   "devDependencies": {
     "@astrojs/renderer-react": "^0.2.0",
