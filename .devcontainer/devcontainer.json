@@ -36,7 +36,9 @@
 		"mrmlnc.vscode-scss",
 		"rangav.vscode-thunder-client",
 		"visualstudioexptteam.vscodeintellicode",
-		"ldez.ignore-files"
+		"ldez.ignore-files",
+		"wakatime.vscode-wakatime",
+		"kisstkondoros.vscode-codemetrics"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
