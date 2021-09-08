@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "files.autoSave": "onFocusChange",
+  "eslint.debug": true,
+  "eslint.lintTask.enable": true
+}
