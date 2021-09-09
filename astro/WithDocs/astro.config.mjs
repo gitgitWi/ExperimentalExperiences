@@ -1,3 +1,6 @@
+import { AstroUserConfig } from "astro";
+
+/** @type {AstroUserConfig} */
 export default {
   // projectRoot: '.',     // Where to resolve all URLs relative to. Useful if you have a monorepo project.
   // pages: './src/pages', // Path to Astro components, pages, and data
