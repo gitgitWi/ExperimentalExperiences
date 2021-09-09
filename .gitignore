@@ -68,6 +68,12 @@ typings/
 
 .yarn
 
+# yarn berry rc
+
+.yarnrc*
+.yarnrc.*
+.pnp.cjs
+
 # Optional eslint cache
 
 .eslintcache
