@@ -24,7 +24,7 @@
   "packageManager": "yarn@3.0.2",
   "scripts": {
     "postinstall": "husky install",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json --fix"
   },
   "workspaces": [
     "astro/*",
