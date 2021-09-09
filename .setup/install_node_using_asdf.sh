@@ -8,7 +8,7 @@ node -v
 npm i -g npm yarn
 npm -v
 # yarn v1.x -> v3.x
-yarn set version latest
+yarn set version berry
 yarn -v
 
 # husky init, install packages
