@@ -5,6 +5,8 @@
 - 한국어 페이지도 있긴하나, 랜딩 페이지만 번역된 수준..ㅠ
 - `.astro` 파일은 아직 Prettier가 지원되지 않는다.. 💢
 
+<br />
+
 ---
 
 ## Getting Started
@@ -36,6 +38,8 @@ yarn workspace astro-with-docs run (dev|build|preview)
 - `dev`: 일반적인 개발 모드, 최초실행시 npm cache 파일 생성 (`snowpack`)
 - `build`: 배포 파일로 빌드
 - `preview`: 배포 파일을 미리 실행, 일반적으로 사용하는 `start`와 유사
+
+<br />
 
 ---
 
@@ -75,3 +79,21 @@ firebase emulators:start
 
 firebase deploy
 ```
+
+<br />
+
+---
+
+## Questions..
+
+### Git Clone으로 프로젝트 새로 설치하는 경우
+
+- Monorepo 라 그런건지.. node_modules를 재대로 참조하지 못하는 문제가 발생함
+
+  ```bash
+  $ yarn workspace astro-with-docs build
+  (node:56468) UnhandledPromiseRejectionWarning: Error: ENOTDIR: not a directory, stat '/workspaces/ExperimentalExperiences/.yarn/cache/astro-npm-0.20.4-b5e49c8c48-4d1ceb8005.zip/node_modules/astro/node_modules/path-to-regexp'
+  ```
+
+- 이럴 땐 다시 npm으로 할 수 밖에 없는 건가?
+  - npm으로 그냥 실행하면 어쨌든 로컬 프로젝트 하나를 새로 생성하는게 되어서 되기는 함
