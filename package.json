@@ -27,6 +27,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix"
   },
   "workspaces": [
-    "astro/*"
+    "astro/*",
+    "mitosis/*"
   ]
 }
