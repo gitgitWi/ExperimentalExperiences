@@ -4,51 +4,30 @@ import ReactCounter from '../components/ReactCounter.tsx';
 import SvelteCounter from '../components/SvelteCounter.svelte';
 import VueCounter from '../components/VueCounter.vue';
 
-let title = 'My Astro Site';
+const title = 'My First Astro Site';
+const headerText = `Astro Pages`;
 
 ---
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
-
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
-    <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/home.css">
-
-    <style>
-        header {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            max-width: min(100%, 68ch);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title> {title} </title>
+  <link rel="stylesheet" href={Astro.resolve('../styles/globals.css')} />
 </head>
 <body>
-    <main>
-        <header>
-            <div>
-                <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-                <h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-            </div>
-        </header>
-
-        <Tour />
-
-        <h2>React Counter</h2>
-        <ReactCounter client:visible />
-        <br />
-
-        <h2>Svelte Counter</h2>
-        <SvelteCounter client:visible />
-        <br />
-
-        <h2>Vue Counter</h2>
-        <VueCounter client:visible />
-        <br />
-    </main>
+  <header>
+    <h1>{headerText}</h1>
+  </header>
+  <main>
+    <button>Click Me!</button>
+  </main>
 </body>
 </html>
+
+<style lang="scss">
+header {
+  background-color: grey;
+  color: white;
+}
+</style>
