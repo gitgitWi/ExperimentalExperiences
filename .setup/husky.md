@@ -4,6 +4,10 @@
 
 - [Recommended Installation with `npx`/`yarn`](https://typicode.github.io/husky/#/?id=automatic-recommended)
 
+  ```bash
+  yarn dlx husky-init --yarn2 && yarn
+  ```
+
 ## Prettier
 
 - [Option 2. pretty-quick](https://prettier.io/docs/en/precommit.html#option-2-pretty-quickhttpsgithubcomazzpretty-quick)
