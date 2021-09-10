@@ -1,0 +1,31 @@
+.reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+header,
+button,
+a,
+h1,
+h2,
+h3,
+main,
+section,
+article,
+code,
+img,
+input,
+li,
+ul,
+p,
+span,
+svg,
+table,
+textarea,
+title {
+  @extend .reset;
+}
